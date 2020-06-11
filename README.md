@@ -22,6 +22,8 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 
 #Pulling docker Image and running
 
+sudo docker network create jenkins
+
 sudo docker run --name jenkinsci -p 8080:8080 jenkins/jenkins:lts
 
 #Managing docker Image
